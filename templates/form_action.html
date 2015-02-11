@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Handle POST requests with Flask</title>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div id="container">
+            <div class="title">
+                <h1>EVGEN - fb eventbilde generator</h1>
+            </div>
+            <div id="content">
+                Angitte parametre:<strong>{{sted}}</strong>, <strong>{{tidspunkt}} og {{ekstratekst}}
+            </div>
+            <div class="title">
+                <h1>Resultat:</h1>
+            </div>
+		<img src="../static/output.png?{{timestamp}}">
+            </div>
+        </div>
+    </body>
+</html>
+

@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>EVGEN 1.0 Alpha</title>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div id="container">
+            <div class="title">
+                <h1>EVGEN - fb eventbilde generator</h1>
+            </div>
+            <div id="content">
+                <form method="post" action="{{ url_for('evgen') }}">
+                  <label for="sted">Sted (linje 1):</label>
+                  <input type="text" name="sted" /><br />
+                  <label for="tidspunkt">Tidspunkt (linje 2):</label>
+                  <input type="text" name="tidspunkt" /><br />
+                  <label for="ekstratekst">Ekstratekst (linje 3):</label>
+                  <input type="text" name="ekstratekst" /><br />
+                  <input type="submit" />
+                </form>
+            </div>
+            <div class="title">
+                <h1>Eksempel<h1>
+		(Kun teksten nederst til høyre kan angis):</h1>
+            </div>
+		<img src="../static/sample.png">
+            </div>
+        </div>
+    </body>
+</html>
+ 
