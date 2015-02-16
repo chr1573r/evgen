@@ -48,7 +48,7 @@ def evgen():
     sted=request.form['sted']
     tidspunkt=request.form['tidspunkt']
     ekstratekst=request.form['ekstratekst']
-    subprocess.check_call(['./evgen.sh', sted, tidspunkt, ekstratekst])
+    subprocess.check_call(['./evgen.sh', sted.encode("utf-8"), tidspunkt.encode("utf-8"), ekstratekst.encode("utf-8")])
     return render_template('form_action.html', sted=sted, tidspunkt=tidspunkt, ekstratekst=ekstratekst, timestamp=timestamp)
 
 # Run the app :)
